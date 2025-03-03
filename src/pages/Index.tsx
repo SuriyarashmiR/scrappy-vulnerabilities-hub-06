@@ -50,77 +50,14 @@ const Index = () => {
             
             <SearchBar onSearch={handleSearch} />
             
-            {/* Vulnerability Sections - Layout like the reference image */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-medium mb-2">Section 7</h3>
-                <div className="flex items-center mb-2">
-                  <div className="text-sm font-semibold mr-2">Section 8</div>
-                  <div className="bg-blue-100 dark:bg-blue-900 px-2 py-0.5 rounded text-xs">9.1</div>
-                </div>
-                <div className="h-32 border border-gray-200 dark:border-gray-700 rounded-md bg-gray-50 dark:bg-gray-700"></div>
-              </div>
-              
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-medium mb-2">Section 1</h3>
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png" 
-                         alt="Amazon" className="h-5 mr-2" />
-                  </div>
-                  <div className="bg-gray-100 dark:bg-gray-700 w-20 h-4 rounded"></div>
-                </div>
-                <div className="h-32 border border-dashed border-gray-300 dark:border-gray-600 rounded-md bg-gray-50 dark:bg-gray-700"></div>
-              </div>
-              
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-medium mb-2">Section 2</h3>
-                <div className="flex items-center justify-between mb-2">
-                  <div className="text-sm font-semibold">Section 10</div>
-                  <div className="bg-gray-100 dark:bg-gray-700 w-20 h-4 rounded"></div>
-                </div>
-                <div className="h-32 border border-gray-200 dark:border-gray-700 rounded-md bg-gray-50 dark:bg-gray-700"></div>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-medium mb-2">Section 4</h3>
-                <div className="flex items-center justify-between mb-2">
-                  <div className="text-sm font-semibold">Section 11</div>
-                  <div className="bg-gray-100 dark:bg-gray-700 w-20 h-4 rounded"></div>
-                </div>
-                <div className="h-32 border border-gray-200 dark:border-gray-700 rounded-md bg-gray-50 dark:bg-gray-700"></div>
-              </div>
-              
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-medium mb-2">Section 5</h3>
-                <div className="flex items-center justify-between mb-2">
-                  <div className="text-sm font-semibold">Section 12</div>
-                  <div className="bg-gray-100 dark:bg-gray-700 w-20 h-4 rounded"></div>
-                </div>
-                <div className="h-32 border border-gray-200 dark:border-gray-700 rounded-md bg-gray-50 dark:bg-gray-700"></div>
-              </div>
-              
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-medium mb-2">Section 6</h3>
-                <div className="flex items-center justify-between mb-2">
-                  <div className="text-sm font-semibold">Section 13</div>
-                  <div className="bg-gray-100 dark:bg-gray-700 w-20 h-4 rounded"></div>
-                </div>
-                <div className="h-32 border border-gray-200 dark:border-gray-700 rounded-md bg-gray-50 dark:bg-gray-700"></div>
-              </div>
-            </div>
-            
-            {/* Original Vulnerability Lists */}
-            <div className="my-10">
-              <h2 className="text-xl font-semibold mb-4">Latest Vulnerabilities</h2>
-              <VulnerabilityList title="" />
-            </div>
-            
-            <div className="mb-10">
-              <h2 className="text-xl font-semibold mb-4">Additional Vulnerabilities</h2>
-              <VulnerabilityList title="" />
+            {/* 6 Identical Vulnerability Sections */}
+            <div className="space-y-8 mt-8">
+              <VulnerabilityList title="Company Security Assessment" />
+              <VulnerabilityList title="Privacy Analysis" />
+              <VulnerabilityList title="Data Management Practices" />
+              <VulnerabilityList title="User Information Handling" />
+              <VulnerabilityList title="Terms of Service Review" />
+              <VulnerabilityList title="Security Vulnerabilities" />
             </div>
           </div>
         </div>

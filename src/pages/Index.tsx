@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import SearchBar from '@/components/SearchBar';
 import VulnerabilityList from '@/components/VulnerabilityList';
 import Navbar from '@/components/Navbar';
-import { Shield } from 'lucide-react';
 import { toast } from '@/components/ui/use-toast';
 
 const Index = () => {
@@ -50,14 +49,14 @@ const Index = () => {
             
             <SearchBar onSearch={handleSearch} />
             
-            {/* 6 Identical Vulnerability Sections */}
+            {/* 6 Identical Vulnerability Sections without titles */}
             <div className="space-y-8 mt-8">
-              <VulnerabilityList title="Company Security Assessment" />
-              <VulnerabilityList title="Privacy Analysis" />
-              <VulnerabilityList title="Data Management Practices" />
-              <VulnerabilityList title="User Information Handling" />
-              <VulnerabilityList title="Terms of Service Review" />
-              <VulnerabilityList title="Security Vulnerabilities" />
+              <VulnerabilityList />
+              <VulnerabilityList />
+              <VulnerabilityList />
+              <VulnerabilityList />
+              <VulnerabilityList />
+              <VulnerabilityList />
             </div>
           </div>
         </div>

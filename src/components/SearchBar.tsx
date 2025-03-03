@@ -20,20 +20,25 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   };
 
   return (
-    <div className="w-full flex items-center justify-center space-x-2 max-w-xl mx-auto mb-6">
-      <input
-        type="text"
-        placeholder="Search for a service..."
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        onKeyDown={handleKeyDown}
-        className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-scraper-blue dark:bg-gray-800 dark:text-white transition-all duration-300"
-      />
+    <div className="w-full flex items-center justify-center space-x-2 max-w-xl mx-auto mb-5">
+      <div className="relative w-full">
+        <input
+          type="text"
+          placeholder="Search for a service..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={handleKeyDown}
+          className="w-full px-4 py-2.5 pl-10 rounded-lg border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-scraper-blue dark:bg-gray-800 dark:text-white transition-all duration-300 font-sans shadow-sm"
+        />
+        <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+          <Search size={18} className="text-gray-400" />
+        </div>
+      </div>
       <button
         onClick={handleSearch}
-        className="px-4 py-2 bg-scraper-blue text-white rounded-md hover:bg-blue-600 transition-colors duration-300"
+        className="px-5 py-2.5 bg-scraper-blue text-white rounded-lg hover:bg-blue-600 transition-colors duration-300 shadow-sm font-medium"
       >
-        <Search size={18} />
+        Search
       </button>
     </div>
   );

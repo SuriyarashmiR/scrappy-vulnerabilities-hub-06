@@ -41,25 +41,25 @@ const Index = () => {
       
       <div className="flex-1 flex flex-col min-h-screen md:ml-[180px]">
         {/* Desktop nav bar */}
-        <div className="p-4 border-b border-gray-200 dark:border-gray-700">
+        <div className="p-3 border-b border-gray-200 dark:border-gray-700">
           <Navbar />
         </div>
         
-        {/* Main Content */}
-        <div className="flex-1 p-4 md:p-6 overflow-y-auto">
+        {/* Main Content - Reduced padding/gap */}
+        <div className="flex-1 p-3 md:p-4 overflow-y-auto">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-6">
-              <h1 className="text-2xl font-bold mb-2">WEB SCRAPING TOOL</h1>
-              <p className="text-gray-600 dark:text-gray-400">REAL-TIME INFO</p>
+            <div className="text-center mb-4">
+              <h1 className="text-2xl font-bold mb-1 font-heading">WEB SCRAPING TOOL</h1>
+              <p className="text-gray-600 dark:text-gray-400 text-sm font-medium tracking-wide">REAL-TIME INFO</p>
             </div>
             
             <SearchBar onSearch={handleSearch} />
             
             {/* Global Expand/Collapse Control */}
-            <div className="flex justify-end mb-4 mt-6">
+            <div className="flex justify-end mb-3 mt-4">
               <button
                 onClick={handleGlobalExpandToggle}
-                className="flex items-center px-4 py-2 rounded-lg bg-scraper-blue text-white hover:bg-blue-600 transition-all duration-200"
+                className="flex items-center px-4 py-2 rounded-lg bg-scraper-blue text-white hover:bg-blue-600 transition-all duration-200 shadow-sm"
               >
                 {globalExpanded ? 'Collapse' : 'Expand'} All
                 {globalExpanded ? (
@@ -71,7 +71,7 @@ const Index = () => {
             </div>
             
             {/* 3 Vulnerability Sections (reduced from 6) */}
-            <div className="space-y-6 mt-2">
+            <div className="space-y-4 mt-2">
               <VulnerabilityList globalExpanded={globalExpanded} />
               <VulnerabilityList globalExpanded={globalExpanded} />
               <VulnerabilityList globalExpanded={globalExpanded} />

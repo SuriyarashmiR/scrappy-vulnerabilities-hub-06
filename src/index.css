@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -92,6 +94,10 @@
   body {
     @apply bg-background text-foreground antialiased;
   }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
 }
 
 .glassmorphism {
@@ -116,3 +122,22 @@
 .stagger-item:nth-child(4) { animation: fade-up 0.4s ease forwards 0.4s; }
 .stagger-item:nth-child(5) { animation: fade-up 0.4s ease forwards 0.5s; }
 .stagger-item:nth-child(6) { animation: fade-up 0.4s ease forwards 0.6s; }
+
+/* Card hover effects */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Button style */
+.btn-primary {
+  @apply bg-scraper-blue text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors shadow-sm;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-white px-4 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors shadow-sm;
+}

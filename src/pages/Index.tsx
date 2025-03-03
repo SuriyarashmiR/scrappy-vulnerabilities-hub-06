@@ -49,8 +49,10 @@ const Index = () => {
             
             <SearchBar onSearch={handleSearch} />
             
-            {/* 4 Identical Vulnerability Sections without titles */}
+            {/* 6 Identical Vulnerability Sections without titles */}
             <div className="space-y-8 mt-8">
+              <VulnerabilityList />
+              <VulnerabilityList />
               <VulnerabilityList />
               <VulnerabilityList />
               <VulnerabilityList />

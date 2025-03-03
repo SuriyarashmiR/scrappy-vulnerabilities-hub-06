@@ -70,11 +70,8 @@ const Index = () => {
               </button>
             </div>
             
-            {/* 6 Vulnerability Sections */}
+            {/* 3 Vulnerability Sections (reduced from 6) */}
             <div className="space-y-6 mt-2">
-              <VulnerabilityList globalExpanded={globalExpanded} />
-              <VulnerabilityList globalExpanded={globalExpanded} />
-              <VulnerabilityList globalExpanded={globalExpanded} />
               <VulnerabilityList globalExpanded={globalExpanded} />
               <VulnerabilityList globalExpanded={globalExpanded} />
               <VulnerabilityList globalExpanded={globalExpanded} />

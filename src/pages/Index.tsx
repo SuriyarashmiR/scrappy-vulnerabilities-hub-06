@@ -46,9 +46,9 @@ const Index = () => {
           <div className="h-[1px] bg-gray-200 dark:bg-gray-700 w-full mt-3 -ml-4"></div>
         </div>
         
-        {/* Main Content - Moved to the left */}
+        {/* Main Content - Removed gap with full width */}
         <div className="flex-1 px-4 py-2 md:px-6 md:py-3 overflow-y-auto">
-          <div className="max-w-5xl mx-0">
+          <div className="w-full">
             <div className="text-left mb-4">
               <h1 className="text-2xl font-bold mb-1 font-heading">WEB SCRAPING TOOL</h1>
               <p className="text-gray-600 dark:text-gray-400 text-sm font-medium tracking-wide">REAL-TIME INFO</p>

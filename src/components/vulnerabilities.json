@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "severity": "high",
+        "oem": "intel",
+        "published_date": "2023-10-01",
+        "source": "test data",
+        "ranking": 1
+    },
+    {
+        "id": 2,
+        "severity": "low",
+        "oem": "microsoft",
+        "published_date": "2023-10-02",
+        "source": "test data",
+        "ranking": 2
+    },
+    {
+        "id": 3,
+        "severity": "high",
+        "oem": "nvidia",
+        "published_date": "2023-10-03",
+        "source": "test data",
+        "ranking": 3
+    },
+    {
+        "id": 4,
+        "severity": "low",
+        "oem": "dell",
+        "published_date": "2023-10-04",
+        "source": "test data",
+        "ranking": 4
+    },
+    {
+        "id": 5,
+        "severity": "high",
+        "oem": "redhat",
+        "published_date": "2023-10-05",
+        "source": "test data",
+        "ranking": 5
+    }
+]
